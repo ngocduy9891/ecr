@@ -5,7 +5,7 @@ jobs:
       - image: circleci/python:3.6.1
     steps:
       - checkout
-      - run: echo "A first hello"
+      - run: echo "A first hello1"
 deployment:
     commands:
         - docker login -e ngocduy9891@gmail.com -u ngocduy9891 -p Duy13121989@
