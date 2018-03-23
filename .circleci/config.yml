@@ -9,5 +9,6 @@ jobs:
 deployment:
     commands:
         - docker login -e ngocduy9891@gmail.com -u ngocduy9891 -p Duy13121989@
+        - docker build -t ngocduy9891/python .
         - docker push ngocduy9891/python
         - ./start.sh
