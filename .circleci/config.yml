@@ -9,16 +9,16 @@ jobs:
           name: Load Docker image layer cache
           command: |
             set +o pipefail
-            sudo docker load -i /caches/app.tar | true
+            docker load -i /caches/app.tar | true
       - run:
           name: Build application Docker image
           command: |
-            sudo docker build --cache-from=app -t app .
+            docker build --cache-from=app -t app .
       - run:
           name: Save Docker image layer cache
           command: |
             mkdir -p /caches
-            sudo docker save -o /caches/app.tar app
+            docker save -o /caches/app.tar app
       - run: echo "A first hello1"
 deployment:
     commands:
