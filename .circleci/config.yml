@@ -4,6 +4,7 @@ jobs:
     docker:
       - image: docker:17.05.0-ce-git
         aws_auth:
+          aws_region: ap-southeast-1
           aws_access_key_id: AKIAIHFXK7ZTVDNQIZYQ
           aws_secret_access_key: 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
     steps:
