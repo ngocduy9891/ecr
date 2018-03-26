@@ -32,8 +32,8 @@ jobs:
           key: v1-{{ .Branch }}-{{ epoch }}
           paths:
             - /caches/app.tar
-deployment:
-    commands:
-        - docker login -e ngocduy9891@gmail.com -u ngocduy9891 -p Duy13121989@
-        - docker push ngocduy9891/python
-        - ./start.sh
+      - deploy:
+          commands:
+            - docker login -e ngocduy9891@gmail.com -u ngocduy9891 -p Duy13121989@
+            - docker push ngocduy9891/python
+            - ./start.sh
