@@ -35,6 +35,6 @@ jobs:
       - deploy:
           name: Push application Docker image
           command: |
-            docker tag ngocduy9891/python
+            docker tag python ngocduy9891/python
             docker login -u ngocduy9891 -p Duy13121989@
             docker push ngocduy9891/python:abc
