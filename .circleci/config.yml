@@ -36,5 +36,5 @@ jobs:
           name: Push application Docker image
           command: |
             docker tag app 012881927014.dkr.ecr.ap-southeast-1.amazonaws.com/docker:latest
-            aws ecr get-login --no-include-email --region ap-southeast-1
+            docker login -u AWS -p duyNGA92@ -e none https://012881927014.dkr.ecr.ap-southeast-1.amazonaws.com/docker
             docker push 012881927014.dkr.ecr.ap-southeast-1.amazonaws.com/docker:latest
