@@ -35,6 +35,6 @@ jobs:
       - deploy:
           name: Push application Docker image
           command: |
-            aws ecr get-login
-            docker tag app 012881927014.dkr.ecr.ap-southeast-1.amazonaws.com/docker:latest            
-            docker push 012881927014.dkr.ecr.ap-southeast-1.amazonaws.com/docker:latest
+            aws ecr get-login --region ap-southeast-1
+            docker tag app 896755345229.dkr.ecr.ap-southeast-1.amazonaws.com/docker:latest           
+            docker push 896755345229.dkr.ecr.ap-southeast-1.amazonaws.com/docker:latest
