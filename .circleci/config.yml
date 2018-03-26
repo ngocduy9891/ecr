@@ -4,7 +4,7 @@ jobs:
     docker:
       - image: docker:17.05.0-ce-git
         aws_auth:
-          AWS_DEFAULT_REGION: 
+          aws_default_region: 
           aws_access_key_id: 
           aws_secret_access_key: 
     steps:
