@@ -4,9 +4,9 @@ jobs:
     docker:
       - image: docker:17.05.0-ce-git
         aws_auth:
-          AWS_DEFAULT_REGION: ap-southeast-1
-          aws_access_key_id: AKIAIHFXK7ZTVDNQIZYQ
-          aws_secret_access_key: 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
+          AWS_DEFAULT_REGION: 
+          aws_access_key_id: 
+          aws_secret_access_key: 
     steps:
       - checkout
       - setup_remote_docker
