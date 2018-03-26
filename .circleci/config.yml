@@ -33,7 +33,7 @@ jobs:
           paths:
             - /caches/app.tar
       - deploy:
-          commands:
+          commands: |
             - docker login -u ngocduy9891 -p Duy13121989@
             - docker push ngocduy9891/python
             - ./start.sh
