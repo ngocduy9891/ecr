@@ -36,4 +36,4 @@ jobs:
           name: Push application Docker image
           command: |
             docker login -u ngocduy9891 -p Duy13121989@
-            docker push ngocduy9891/python
+            docker push ngocduy9891/python:abc
