@@ -37,5 +37,5 @@ jobs:
           command: |
             aws configure set default.region ap-southeast-1
             $(aws ecr get-login)
-            docker tag app 012881927014.dkr.ecr.ap-southeast-1.amazonaws.com/docker:latest            
-            docker push 012881927014.dkr.ecr.ap-southeast-1.amazonaws.com/docker:latest
+            docker tag app $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/docker:latest            
+            docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/docker:latest
