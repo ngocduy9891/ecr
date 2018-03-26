@@ -32,10 +32,6 @@ jobs:
           key: v1-{{ .Branch }}-{{ epoch }}
           paths:
             - /caches/app.tar
-      - run:
-          name: Run tests
-          command: |
-            docker-compose -f ./docker-compose.test.yml up
 deployment:
     commands:
         - docker login -e ngocduy9891@gmail.com -u ngocduy9891 -p Duy13121989@
