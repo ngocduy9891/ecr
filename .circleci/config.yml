@@ -39,3 +39,4 @@ jobs:
             ${login}
             docker tag app 896755345229.dkr.ecr.ap-southeast-1.amazonaws.com/docker:latest           
             docker push 896755345229.dkr.ecr.ap-southeast-1.amazonaws.com/docker:latest
+            aws ecs run-task --task-definition docker
